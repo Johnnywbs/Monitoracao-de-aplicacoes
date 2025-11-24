@@ -1,0 +1,11 @@
+# grafana/provisioning/datasources/prometheus.yaml
+apiVersion: 1
+
+datasources:
+  - name: Prometheus # Nome que aparecerá no Grafana
+    type: prometheus
+    url: http://prometheus:9090 # 'prometheus' é o nome do serviço no docker-compose e 9090 é a porta interna
+    access: proxy # Tipo de acesso, 'proxy' é o mais comum para containers
+    isDefault: true # Opcional: define esta como a fonte de dados padrão
+    version: 1
+    editable: false # Impede que usuários editem esta fonte de dados pela UI do Grafana

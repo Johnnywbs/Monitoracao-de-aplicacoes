@@ -1,0 +1,5 @@
+django==4.2  # Versão mais recente do Django
+djangorestframework==3.14.0  # Framework para criar a API REST
+django-prometheus==2.4.0
+psycopg2-binary==2.9.10
+
